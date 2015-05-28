@@ -1,0 +1,3 @@
+# Example SamuraiCRM
+# https://github.com/lowski/samurai-crm
+
