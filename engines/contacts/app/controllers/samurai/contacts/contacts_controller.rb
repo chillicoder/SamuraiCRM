@@ -3,6 +3,7 @@ module Samurai
   module Contacts
     class ContactsController < ApplicationController
       before_action :set_contact, only: [:show, :edit, :update, :destroy]
+      authorize_resource class: Samurai::Contacts::Contact
 
       # GET /contacts
       def index
