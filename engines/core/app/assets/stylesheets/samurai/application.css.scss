@@ -1,0 +1,8 @@
+// SamuraiCRM/engines/core/assets/stylesheets/samurai/application.css.scss
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+body {
+  padding-top: 65px; // For the nav bar
+}
