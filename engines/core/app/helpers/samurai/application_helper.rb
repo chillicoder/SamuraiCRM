@@ -14,8 +14,12 @@ module Samurai
       FLASH_CLASSES[level]
     end
     
-    def active(path)
-      current_page?(path) ? 'active' : ''
+    def active(path, comparator = :absolute)
+      if comparator == :inclusion
+        /^#{path}/ =~ request.path ? 'active' : ''
+      else
+        current_page?(path) ? 'active' : ''
+      end
     end
     
   end

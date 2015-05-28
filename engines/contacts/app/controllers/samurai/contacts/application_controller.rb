@@ -1,6 +1,8 @@
+# SamuraiCRM/engines/contacts/app/controllers/samurai/contacts/application_controller.rb
+
 module Samurai
   module Contacts
-    class ApplicationController < ActionController::Base
+    class ApplicationController < Samurai::ApplicationController
     end
   end
 end
