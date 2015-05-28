@@ -1,0 +1,5 @@
+# SamuraiCRM/engines/contacts/Gemfile
+source 'https://rubygems.org'
+
+gemspec
+gem 'samurai_core', path: '../core'

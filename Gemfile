@@ -12,7 +12,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'modular_engine'
+gem 'deface'
+
 gem 'samurai_core', path: 'engines/core'
+gem 'samurai_contacts', path: 'engines/contacts'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
