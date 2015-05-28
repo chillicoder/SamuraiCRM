@@ -4,6 +4,7 @@ PATH
     samurai_core (0.0.1)
       autoprefixer-rails (~> 5.1.5)
       bootstrap-sass (~> 3.3.3)
+      cancan (~> 1.6.10)
       devise (~> 3.4.1)
       rails (~> 4.2.1)
       sass-rails (~> 5.0.1)
@@ -55,6 +56,8 @@ GEM
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
     builder (3.2.2)
+    cancan (1.6.10)
+    database_cleaner (1.4.1)
     devise (3.4.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -62,8 +65,15 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.5.2)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
+    ffaker (2.0.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -108,6 +118,23 @@ GEM
     rake (10.4.2)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
+    rspec-core (3.2.3)
+      rspec-support (~> 3.2.0)
+    rspec-expectations (3.2.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.2.0)
+    rspec-mocks (3.2.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.2.0)
+    rspec-rails (3.2.1)
+      actionpack (>= 3.0, < 4.3)
+      activesupport (>= 3.0, < 4.3)
+      railties (>= 3.0, < 4.3)
+      rspec-core (~> 3.2.0)
+      rspec-expectations (~> 3.2.0)
+      rspec-mocks (~> 3.2.0)
+      rspec-support (~> 3.2.0)
+    rspec-support (3.2.2)
     sass (3.4.14)
     sass-rails (5.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -134,5 +161,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  database_cleaner
+  factory_girl_rails
+  ffaker
+  rspec-rails
   samurai_core!
   sqlite3
