@@ -1,8 +1,10 @@
+<!-- SamuraiCRM/engines/core/app/views/samurai/admin/admin/shared/_nav.html.erb -->
+
 <ul class='nav nav-pills navbar-right'>
-  <li role='presentation' class="<%= active(admin_path) %>">
-    <%= link_to 'Dashboard', admin_path %>
+  <li role='presentation' class="<%= active(samurai.admin_path) %>">
+    <%= link_to 'Dashboard', samurai.admin_path %>
   </li>
-  <li role='presentation' class="<%= active(samurai.admin_users_path) %>">
+  <li role='presentation' class="<%= active(samurai.admin_users_path) %>" data-samurai-hook='admin_contacts_nav'>
     <%= link_to samurai.admin_users_path do %>
     Users
     <span class='badge'><%= Samurai::User.count %></span>

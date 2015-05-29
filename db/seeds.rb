@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Samurai::User.create({
+admin = Samurai::User.create({
   :email => 'justin@agentformula.com',
   :password => 'password',
   :password_confirmation => 'password'

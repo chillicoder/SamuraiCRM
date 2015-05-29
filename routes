@@ -2,6 +2,14 @@
 samurai      /           Samurai::Core::Engine
 
 Routes for Samurai::Core::Engine:
+                contacts GET    /contacts(.:format)            samurai/contacts/contacts#index
+                         POST   /contacts(.:format)            samurai/contacts/contacts#create
+             new_contact GET    /contacts/new(.:format)        samurai/contacts/contacts#new
+            edit_contact GET    /contacts/:id/edit(.:format)   samurai/contacts/contacts#edit
+                 contact GET    /contacts/:id(.:format)        samurai/contacts/contacts#show
+                         PATCH  /contacts/:id(.:format)        samurai/contacts/contacts#update
+                         PUT    /contacts/:id(.:format)        samurai/contacts/contacts#update
+                         DELETE /contacts/:id(.:format)        samurai/contacts/contacts#destroy
         new_user_session GET    /users/sign_in(.:format)       devise/sessions#new
             user_session POST   /users/sign_in(.:format)       devise/sessions#create
     destroy_user_session DELETE /users/sign_out(.:format)      devise/sessions#destroy
@@ -17,4 +25,6 @@ cancel_user_registration GET    /users/cancel(.:format)        devise/registrati
                          PATCH  /users(.:format)               devise/registrations#update
                          PUT    /users(.:format)               devise/registrations#update
                          DELETE /users(.:format)               devise/registrations#destroy
+                   admin GET    /admin(.:format)               samurai/admin/admin#index
+             admin_users GET    /admin/users(.:format)         samurai/admin/users#index
                     root GET    /                              samurai/dashboard#index

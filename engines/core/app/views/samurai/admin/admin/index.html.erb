@@ -1,10 +1,11 @@
 <!-- SamuraiCRM/engines/core/app/views/samurai/admin/admin/index.html.erb -->
 <h2 class='pull-left'>Admin</h2>
+
 <%= render 'admin/shared/nav' %>
 <hr>
 
 <div class='row'>
-  <div class='col-md-6'>
+  <div class='col-md-6' data-samurai-hook='admin_dashboard'>
     <div class='panel panel-primary'>
       <div class='panel-heading'>
         Last 3 Users
