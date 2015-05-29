@@ -18,8 +18,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'modular_engine'
 gem 'deface'
 
-gem 'samurai_core', path: 'engines/core'
+gem 'samurai_core',     path: 'engines/core'
 gem 'samurai_contacts', path: 'engines/contacts'
+gem 'samurai_tasks',    path: 'engines/tasks'
 
 group :development, :test do
   gem 'better_errors'
